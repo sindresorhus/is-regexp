@@ -1,6 +1,6 @@
 {
   "name": "is-regexp",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check whether a variable is a regular expression",
   "license": "MIT",
   "repository": "sindresorhus/is-regexp",
