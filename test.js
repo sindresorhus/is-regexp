@@ -1,19 +1,16 @@
-'use strict';
-var assert = require('assert');
-var isRegexp = require('./');
+import test from 'ava';
+import m from '.';
 
-function toStringRegex() {
-	return '[object RegExp]';
-}
+const toStringRegex = () => '[object RegExp]';
 
-it('should match RegExp', function () {
-	assert(isRegexp(/unicorn/));
-	assert(isRegexp(new RegExp('unicorn')));
-	assert(!isRegexp('unicorn'));
-	assert(!isRegexp(1));
-	assert(!isRegexp(null));
-	assert(!isRegexp({}));
-	assert(!isRegexp([]));
-	assert(!isRegexp({toString: toStringRegex}));
-	assert(!isRegexp({__proto__: {toString: toStringRegex}}));
+test('main', t => {
+	t.true(m(/unicorn/));
+	t.true(m(new RegExp('unicorn')));
+	t.false(m('unicorn'));
+	t.false(m(1));
+	t.false(m(null));
+	t.false(m({}));
+	t.false(m([]));
+	t.false(m({toString: toStringRegex}));
+	t.false(m({__proto__: {toString: toStringRegex}}));
 });

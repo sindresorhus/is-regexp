@@ -1,19 +1,19 @@
 # is-regexp [![Build Status](https://travis-ci.org/sindresorhus/is-regexp.svg?branch=master)](https://travis-ci.org/sindresorhus/is-regexp)
 
-> Check whether a variable is a regular expression
+> Check if a value is a regular expression
 
 
 ## Install
 
-```sh
-$ npm install --save is-regexp
+```
+$ npm install is-regexp
 ```
 
 
 ## Usage
 
 ```js
-var isRegexp = require('is-regexp');
+const isRegexp = require('is-regexp');
 
 isRegexp('unicorn');
 //=> false
@@ -26,6 +26,11 @@ isRegexp(new RegExp('unicorn'));
 ```
 
 
+## Related
+
+- [is](https://github.com/sindresorhus/is) - Type check values
+
+
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
