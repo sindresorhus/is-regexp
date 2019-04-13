@@ -1,16 +1,16 @@
 import test from 'ava';
-import m from '.';
+import isRegexp from '.';
 
 const toStringRegex = () => '[object RegExp]';
 
 test('main', t => {
-	t.true(m(/unicorn/));
-	t.true(m(new RegExp('unicorn')));
-	t.false(m('unicorn'));
-	t.false(m(1));
-	t.false(m(null));
-	t.false(m({}));
-	t.false(m([]));
-	t.false(m({toString: toStringRegex}));
-	t.false(m({__proto__: {toString: toStringRegex}}));
+	t.true(isRegexp(/unicorn/));
+	t.true(isRegexp(new RegExp('unicorn')));
+	t.false(isRegexp('unicorn'));
+	t.false(isRegexp(1));
+	t.false(isRegexp(null));
+	t.false(isRegexp({}));
+	t.false(isRegexp([]));
+	t.false(isRegexp({toString: toStringRegex}));
+	t.false(isRegexp({__proto__: {toString: toStringRegex}}));
 });
