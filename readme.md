@@ -1,4 +1,4 @@
-# is-regexp [![Build Status](https://travis-ci.org/sindresorhus/is-regexp.svg?branch=master)](https://travis-ci.org/sindresorhus/is-regexp)
+# is-regexp
 
 > Check if a value is a regular expression
 
