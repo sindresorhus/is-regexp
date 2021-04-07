@@ -3,7 +3,7 @@ Check if a value is a regular expression.
 
 @example
 ```
-import isRegexp = require('is-regexp');
+import isRegexp from 'is-regexp';
 
 isRegexp('unicorn');
 //=> false
@@ -15,6 +15,4 @@ isRegexp(new RegExp('unicorn'));
 //=> true
 ```
 */
-declare function isRegexp(input: unknown): input is RegExp;
-
-export = isRegexp;
+export default function isRegexp(value: unknown): value is RegExp;

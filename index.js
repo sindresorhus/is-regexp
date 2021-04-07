@@ -1,3 +1,3 @@
-'use strict';
-
-module.exports = input => Object.prototype.toString.call(input) === '[object RegExp]';
+export default function isRegexp(value) {
+	return Object.prototype.toString.call(value) === '[object RegExp]';
+}

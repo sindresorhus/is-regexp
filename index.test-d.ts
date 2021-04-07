@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import isRegexp = require('.');
+import isRegexp from './index.js';
 
 const value: any = 'unicorn';
 
