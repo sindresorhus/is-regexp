@@ -23,6 +23,10 @@ isRegexp(new RegExp('unicorn'));
 //=> true
 ```
 
+## FAQ
+
+#### [Why not just use `instanceof` instead of this package?](https://github.com/sindresorhus/is#why-not-just-use-instanceof-instead-of-this-package)
+
 ## Related
 
 - [is](https://github.com/sindresorhus/is) - Type check values
